@@ -70,3 +70,100 @@ img {
 body {
   background-color: pink;
 }
+.modal input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 14px;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.modal input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+.modal input::placeholder {
+  color: #999;
+  opacity: 1;
+}
+.modal-title {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+.modal-subtitle {
+  margin: 0 0 22px;
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.modal input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 14px;
+}
+
+.modal input:focus {
+  border-color: #ccc;
+  box-shadow: none;
+}
+
+.modal input::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.phone-input {
+  cursor: default;
+}
+
+/* Кнопка «Отправить» */
+.submit-btn {
+  width: 100%;
+  padding: 13px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.submit-btn:hover {
+  background: #3a7bc8;
+}
+
+/* Кнопка «Закрыть» */
+.close-btn {
+  width: 100%;
+  padding: 12px;
+  background: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.close-btn:hover {
+  background: #e0e0e0;
+}

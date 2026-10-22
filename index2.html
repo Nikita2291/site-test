@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="modal/modal-style.css" />
   </head>
   <body>
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <button class="modal-close" id="closeX" aria-label="Закрыть">
+          &times;
+        </button>
+
+        <h2 class="modal-title">Оставьте заявку</h2>
+        <p class="modal-subtitle">
+          Заполните форму, и мы свяжемся с вами для уточнения даты и времени
+          персональной экскурсии
+        </p>
+
+        <input type="text" id="name" name="name" placeholder="Имя" />
+
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="phone-input"
+          placeholder="Телефон"
+          readonly
+        />
+
+        <button class="submit-btn" id="submitBtn">Отправить</button>
+        <button class="close-btn" id="closeBtn">Закрыть</button>
+      </div>
+    </div>
     <div class="cont">
       <div class="header">
         <h1 class="logo">ROBO. SCHOOL</h1>
@@ -22,10 +50,11 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
             adipisci unde, voluptatibus aperiam
           </p>
-          <a href="">Записаться на курс</a>
+          <button class="open-btn" id="openBtn">Записаться на курс</button>
         </div>
         <img class="hero2" src="svin.png" alt="" />
       </div>
     </div>
+    <script src="modal/modal-script.js"></script>
   </body>
 </html>
