@@ -39,7 +39,7 @@
 }
 
 .hero1 a:hover {
-  background-color: rgb(140, 61, 144);
+  background-color: greenyellow;
   transform: scale(1.1);
 }
 
